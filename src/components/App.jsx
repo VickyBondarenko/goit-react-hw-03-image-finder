@@ -57,15 +57,17 @@ export class App extends Component {
         {this.state.isLoading ? (
           <div>
             <Searchbar onSubmit={this.handleSubmit} />
-            <Hearts
-              height="80"
-              width="80"
-              color="#e84b4b"
-              ariaLabel="hearts-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            />
+            <div className={css.Loading}>
+              <Hearts
+                height="120"
+                width="120"
+                color="#e84b4b"
+                ariaLabel="hearts-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+              />
+            </div>
           </div>
         ) : (
           <div>

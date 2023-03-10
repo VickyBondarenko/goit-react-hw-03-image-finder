@@ -16,7 +16,6 @@ export class Searchbar extends Component {
     e.preventDefault();
 
     if (!this.state.searchString) {
-      //   toast('Заповніть, будь ласка, ваш інпут!');
       return;
     }
     this.props.onSubmit(this.state.searchString);
